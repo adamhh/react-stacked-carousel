@@ -26,11 +26,11 @@ const defaultCardItems = [
 
 const setCardStatus = (indexes, cardIndex) => {
   // console.log(indexes, cardIndex);
-  if (indexes.currentIndex === cardIndex) {
+  if (indexes.currentIndex === cardIndex - 1) {
     return  styles.active;
-  } else if (indexes.nextIndex === cardIndex) {
+  } else if (indexes.nextIndex === cardIndex - 1) {
     return styles.next;
-  } else if (indexes.previousIndex === cardIndex) {
+  } else if (indexes.previousIndex === cardIndex - 1) {
     return styles.prev;
   }
   return styles.inactive;
