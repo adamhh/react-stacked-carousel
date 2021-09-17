@@ -1,6 +1,6 @@
 import React, {StyleSheet, useState} from 'react'
-import { StackedCarousel } from 'adams-stacked-carousel'
-import 'adams-stacked-carousel/dist/index.css';
+import { StackedCarousel } from './ReactStacked'
+
 const App = () => {
   const [card, setCard] = useState(null);
   const onCardChange = (event) => {
@@ -39,18 +39,6 @@ const App = () => {
           </div>
           <div key={'child3'}>
             <h2>3 Card</h2>
-          </div>
-          <div key={'child4'}>
-            <h2>4 Card</h2>
-          </div>
-          <div key={'child5'}>
-            <h2>5 Card</h2>
-          </div>
-          <div key={'child6'}>
-            <h2>6 Card</h2>
-          </div>
-          <div key={'child7'}>
-            <h2>7 Card</h2>
           </div>
         </StackedCarousel>
       </div>

@@ -1800,10 +1800,10 @@ acorn@^7.1.1:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-7.4.1.tgz#feaed255973d2e77555b83dbc08851a6c63520fa"
   integrity sha512-nQyp0o1/mNdbTO1PO6kHkwSrmgZ0MT/jCCpNiwbUjGoRN4dlBhqJtoQuCnEOKzgTVwg0ZWiCoQy6SxMebQVh8A==
 
-adams-stacked-carousel@^2.1.4:
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/adams-stacked-carousel/-/adams-stacked-carousel-2.1.4.tgz#bead0e4cb3070a22634e1761e29fd5f0271c39a4"
-  integrity sha512-f3F458tjgQLdBgH47L8kb5EzQkgZkMop00aLeb+0duJaSyZfeRoiPmbvaPr8In47mFGerOQ94VmwtTP/ZqCgCA==
+adams-stacked-carousel@^2.1.5:
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/adams-stacked-carousel/-/adams-stacked-carousel-2.1.5.tgz#d8743574c8532c10a2ac81d90ce51cc8c92f44f2"
+  integrity sha512-zv27ROb+G1pC+hUgf9QAGcr3Xfe7ABAUyopn88eY3WIjaCjJaSA26PnlCTBT4xp9phu6PjTu9O2Q3b/Z4BeAAA==
 
 address@1.1.2, address@^1.0.1:
   version "1.1.2"
