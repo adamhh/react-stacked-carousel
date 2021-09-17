@@ -26,16 +26,16 @@ const defaultCardItems = [
 const setCardStatus = (indexes, cardIndex) => {
   // console.log(indexes, cardIndex);
   if (indexes.currentIndex === cardIndex) {
-    return  styles.active;
+    return  this.styles.active;
   } else if (indexes.nextIndex === cardIndex) {
-    return styles.next;
+    return this.styles.next;
   } else if (indexes.previousIndex === cardIndex) {
-    return styles.prev;
+    return this.styles.prev;
   }
-  return styles.inactive;
+  return this.styles.inactive;
 }
 
-export const StackedCarousel = ({ style, onCardChange, containerClassName, cardClassName, leftButton, rightButton, autoRotate=true, rotationInterval=2000, children}) => {
+export const StackedCarousel = ({styles, style, onCardChange, containerClassName, cardClassName, leftButton, rightButton, autoRotate=true, rotationInterval=2000, children}) => {
   const cardItems = children || defaultCardItems;
   const [indexes, setIndexes] = useState({
     previousIndex: cardItems.length-1,
