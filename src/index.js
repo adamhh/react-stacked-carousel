@@ -1,5 +1,6 @@
+
 import React, { useEffect, useCallback, useState } from 'react';
-import styles from './styles.module.css';
+import styles from './styles.module.css'
 
 const defaultCardItems = [
   (
@@ -120,5 +121,3 @@ export const StackedCarousel = ({ style, onCardChange, containerClassName, cardC
     </div>
   );
 }
-
-
