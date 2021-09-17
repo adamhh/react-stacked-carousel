@@ -1,5 +1,5 @@
 import React, { useEffect, useCallback, useState } from 'react';
-
+import styles from './styles.module.css';
 
 const defaultCardItems = [
   (
@@ -26,16 +26,16 @@ const defaultCardItems = [
 const setCardStatus = (indexes, cardIndex) => {
   // console.log(indexes, cardIndex);
   if (indexes.currentIndex === cardIndex) {
-    return  this.styles.active;
+    return  styles.active;
   } else if (indexes.nextIndex === cardIndex) {
-    return this.styles.next;
+    return styles.next;
   } else if (indexes.previousIndex === cardIndex) {
-    return this.styles.prev;
+    return styles.prev;
   }
-  return this.styles.inactive;
+  return styles.inactive;
 }
 
-export const StackedCarousel = ({styles, style, onCardChange, containerClassName, cardClassName, leftButton, rightButton, autoRotate=true, rotationInterval=2000, children}) => {
+export const StackedCarousel = ({ style, onCardChange, containerClassName, cardClassName, leftButton, rightButton, autoRotate=true, rotationInterval=2000, children}) => {
   const cardItems = children || defaultCardItems;
   const [indexes, setIndexes] = useState({
     previousIndex: cardItems.length-1,
